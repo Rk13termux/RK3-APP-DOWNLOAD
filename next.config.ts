@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Esto habilita `next export` en App Router
+  output: "export",
 };
 
 export default nextConfig;
