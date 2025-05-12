@@ -1,9 +1,5 @@
-// next.config.ts
-import { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  // Esto habilita `next export` en App Router
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
 };
-
 export default nextConfig;
