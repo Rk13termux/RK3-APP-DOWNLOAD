@@ -1,0 +1,27 @@
+/* src/app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS (opcional, si luego quieres usarlas en estilos “raw”) */
+:root {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-primary:    #ff0000;
+}
+
+/* Estilos base */
+body {
+  /* Aplica el fondo negro y texto blanco definidos en tailwind.config */
+  @apply bg-background text-white;
+}
+
+/* Enlaces y botones que usen el color primario */
+a, .text-link {
+  @apply text-primary hover:underline;
+}
+
+.btn-primary {
+  @apply bg-primary text-white font-semibold py-2 px-4 rounded-lg;
+}
